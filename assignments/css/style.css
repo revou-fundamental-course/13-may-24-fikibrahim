@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    padding: 10px;
+    background-color: aqua;
+}
+
+h1{
+    margin: 0;
+    padding: 16px;
+    justify-content: center;
+    text-align: center;
+}
+
+main{
+    padding: 16px;
+}
+
+main p{
+    margin: 8px;
+    padding: 0;
+}
+h5{
+    justify-content: center;
+    text-align: center;
+    margin: 8px;
+}
+
+.img-center {
+    justify-content: center;
+    text-align: center;
+}
+.img-center img{
+    width: 10rem;
+}
+
+.ket-rumus p{
+    margin: 8px;
+}
+
+.tabs {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+    background-color: #f1f1f1;
+    margin-right: 5px;
+}
+
+.tab.active {
+    background-color: #fff;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 5px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: aqua;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    padding: 10px 20px;
+    background-color: rgb(98, 224, 224);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-reset {
+    padding: 10px 20px;
+    background-color: tomato;
+    margin-right: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.button-reset:hover {
+    padding: 10px 20px;
+    background-color: rgb(238, 79, 51);
+    margin-right: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    padding: 4px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}

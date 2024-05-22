@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas - Mini Coding</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Website Kalkulator Matematik (Segitiga)</h1>
+    </header>
+
+    <main>
+      <section class="img-center">
+        <img src="image/segitiga.png" alt="" />
+      </section>
+
+      <p>Rumus Luas Segitiga yaitu:</p>
+
+      <h5>L = 1/2 x a x t</h5>
+
+      <div class="ket-rumus">
+        <p>Dimana:</p>
+        <p>L: Luas</p>
+        <p>a: Panjang Atas</p>
+        <p>t: Tinggi</p>
+      </div>
+
+      <div class="tabs">
+        <div class="tab active" onclick="openTab('area')">Luas Segitiga</div>
+        <div class="tab" onclick="openTab('perimeter')">Keliling Segitiga</div>
+      </div>
+      <div id="area" class="tab-content active">
+        <h2>Hitung Luas Segitiga</h2>
+
+        <div class="input-group">
+          <label for="base">Alas (a):</label>
+          <input type="number" id="base" placeholder="Masukkan alas segitiga" />
+        </div>
+
+        <div class="input-group">
+          <label for="height">Tinggi (t):</label>
+          <input
+            type="number"
+            id="height"
+            placeholder="Masukkan tinggi segitiga"
+          />
+        </div>
+
+        <button class="button" onclick="calculateArea()">Hitung Luas</button>
+        <button class="button-reset" onclick="resetValues()">Reset</button>
+
+        <div id="area-result" class="result"></div>
+      </div>
+
+      <div id="perimeter" class="tab-content">
+        <h2>Hitung Keliling Segitiga</h2>
+        <div class="input-group">
+          <label for="side1">Sisi 1 (a):</label>
+          <input type="number" id="side1" placeholder="Masukkan sisi pertama" />
+        </div>
+        <div class="input-group">
+          <label for="side2">Sisi 2 (b):</label>
+          <input type="number" id="side2" placeholder="Masukkan sisi kedua" />
+        </div>
+        <div class="input-group">
+          <label for="side3">Sisi 3 (c):</label>
+          <input type="number" id="side3" placeholder="Masukkan sisi ketiga" />
+        </div>
+        <button class="button" onclick="calculatePerimeter()">
+          Hitung Keliling
+        </button>
+        <button class="button-reset" onclick="resetValues()">Reset</button>
+        <div id="perimeter-result" class="result"></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Mini Coding | &copy; <span id="current-year"></span> Taufik Ibrahim</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
